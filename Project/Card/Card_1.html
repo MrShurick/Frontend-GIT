@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card_1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+        }
+
+        .box {
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+
+        .box .side-1 {
+            z-index: 1;
+            position: relative;
+            padding: 100px;
+            border: 4px solid black;
+            background-color: rgb(72, 179, 143);
+            backface-visibility: hidden;
+            transition: transform 3s cubic-bezier(.2,.85,.4,1.275)
+        }
+
+        .box .side-2 {
+            z-index: 0;
+            position: absolute;
+            top: 0;
+            padding: 100px;
+            border: 4px solid black;
+            background-color: rgb(72, 179, 143);
+            transform: rotateY(-180deg);
+            backface-visibility: hidden;
+            transition: transform 3s cubic-bezier(.2,.85,.4,1.275)
+        }
+
+        .box:hover .side-1 {
+            transform: rotateY(180deg);
+            z-index: -1;
+        }
+
+        .box:hover .side-2 {
+            transform: rotateY(0deg);
+            z-index: 2;
+        }
+
+        .wrapper img {
+            width: 100px;
+            margin: 0 50px 0 50px;
+        }
+
+        .wrapper .left {
+            transform:rotate(270deg)
+        }
+
+        .wrapper .rigth {
+            transform:rotate(-270deg)
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+
+        <img src="img/free-icon-up-arrow-4436159.png" alt="" class="left">
+
+    <div class="box">
+
+    <div class=" side-1">
+        <h1>SIDE A</h1>
+    </div>
+
+    <div class=" side-2">
+        <h1>SIDE B</h1>
+    </div>
+
+</div>
+<img src="img/free-icon-up-arrow-4436159.png" alt="" class="rigth">
+
+</div>
+</body>
+</html>

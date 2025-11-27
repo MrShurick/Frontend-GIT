@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background: conic-gradient( rgb(0, 0, 0) 5%, rgb(150, 16, 212) 50% );
+    background-size: 200% 200%;
+    animation: BackgroundAnim 20s ease-in-out forwards;
+}
+
+/* Animation */
+ @keyframes BackgroundAnim {
+    0% {
+        background-position: 0% 100%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+} 
+
+.wrapper {
+    max-width: 1200px;
+    min-height: 220vh;
+}
+
+/* Header */
+.wrapper .header {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 10px 0;
+}
+
+.wrapper .header a {
+    margin: 0 50px 0 30px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.wrapper .header a:hover {
+    cursor: pointer;
+    text-decoration: underline 5px solid rgb(94, 0, 183);
+}
+
+.wrapper .header .logo-hit {
+    width: 70px;
+    transition: all 1s ease-in-out;
+}
+
+.wrapper .header .logo-hit:hover {
+    transform: rotateY(180deg);
+}
+
+.wrapper .header .login {
+    width: 50px;
+}
+
+.wrapper .header .login:hover {
+    filter: brightness(150%);
+}
+
+.wrapper .header select  {
+    background: none;
+    border: none;
+    color: rgb(52, 52, 198);
+    font-size: 15px;
+}
+
+.wrapper .header select:hover {
+    cursor: pointer;
+}
+
+.wrapper .header select:focus {
+    outline: none;
+}
+
+/* Headder */
+/* Center-Content */
+
+.center-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-width: 1000px;
+    min-height: 100vh;
+    color: white;
+}
+/* center-block */
+.center-block {
+    margin-top: 22px;
+    min-width: 800px;
+}
+.center-block .center-h1 {
+    text-align: center;
+    margin:  0 50px 0 0;
+    border-left: 2px solid blueviolet;
+    border-right: 2px solid blueviolet;
+}
+
+.center-block .last-video, .record {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.center-block .last-video .video,
+.center-block .record-strem .record .strem {
+  position: relative;
+  margin: 20px 50px 30px 0;
+  padding: 100px 0px 100px 300px;
+  filter: grayscale(70%);
+}
+
+.center-block .last-video .video iframe,
+.center-block .record-strem .record .strem iframe{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+ .center-block .last-video .video:hover,
+ .center-block .record-strem .strem:hover {
+    filter: grayscale(0);
+ }
+ 
+/* left-block */
+.left-block h1 {
+    border-left: 5px solid white;
+    padding-left: 10px;
+}
+
+.left-block .chanel {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 30px;
+    padding: 10px;
+    border: 2px dashed white;
+    transition: all 0.3s ease-in-out;
+}
+
+.left-block .chanel img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.left-block .chanel small {
+    color: gray;
+    font-size: 15px;
+}
+
+.left-block .chanel:hover {
+    cursor: pointer;
+    background-color: rgba(137, 43, 226, 0.578);
+    transform: scale(1.1);
+}
+/* Footer */
+.footer {
+    position: relative;
+    min-height: 175px;
+    top: 100px;
+    padding: 20px;
+    color: white;
+    border-left: 2px solid blueviolet;
+    border-right: 2px solid blueviolet;
+}
+
+.footer .foot-txt {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.49);
+}
+
+.footer .link {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.footer .link img {
+    width: 50px;
+}
+
+.footer .link a {
+    display: flex;
+    text-decoration: none;
+    margin-left: 200px;
+    color: white;
+    font-weight: bold;
+}
+
+.footer .link a:hover {
+    filter: brightness(150%);
+}
+
+.footer-2 {
+    display: flex;
+}
+
+.footer-2 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: gray;
+    font-weight: bold;
+}
+
+.footer-2 div img {
+    width: 20px;
+    margin: 10px;
+    filter: grayscale(100%);
+}
+
+/* Footer */

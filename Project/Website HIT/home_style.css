@@ -1,0 +1,411 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background: conic-gradient( rgb(0, 0, 0) 5%, rgb(150, 16, 212) 50% );
+    background-size: 200% 200%;
+    animation: BackgroundAnim 20s ease-in-out forwards;
+}
+
+/* Animation */
+ @keyframes BackgroundAnim {
+    0% {
+        background-position: 0% 100%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+} 
+
+.wrapper {
+    max-width: 1200px;
+    min-height: 220vh;
+}
+
+/* Header */
+.wrapper .header {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 10px 0;
+}
+
+.wrapper .header a {
+    margin: 0 50px 0 30px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.wrapper .header a:hover {
+    cursor: pointer;
+    text-decoration: underline 5px solid rgb(94, 0, 183);
+}
+
+.wrapper .header .logo-hit {
+    width: 70px;
+    transition: all 1s ease-in-out;
+}
+
+.wrapper .header .logo-hit:hover {
+    transform: rotateY(180deg);
+}
+
+.wrapper .header .login {
+    width: 50px;
+}
+
+.wrapper .header .login:hover {
+    filter: brightness(150%);
+}
+
+.wrapper .header select  {
+    background: none;
+    border: none;
+    color: rgb(52, 52, 198);
+    font-size: 15px;
+}
+
+.wrapper .header select:hover {
+    cursor: pointer;
+}
+
+.wrapper .header select:focus {
+    outline: none;
+}
+
+/* Headder */
+/* Short */
+.short {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 200px;
+}
+
+.short .short-1, .short-2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 200px;
+    transition: all 0.5s ease-in-out;
+}
+
+.short img {
+    width: 150px;
+    transition: all 0.8s ease-in-out;
+}
+
+.short img:hover {
+    cursor: pointer;
+    transform:scale(1.2);
+}
+/* Short */
+
+.center-content {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+/* Center-Block */
+.center-block {
+    position: sticky;
+    width: 650px;
+    height: 100vh;
+    color: white;
+}
+
+.center-block .news p {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.center-block .news .news-blocks {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border: 3px dashed white;
+    transition: all 0.5s ease-in-out;
+}
+
+.center-block .news .news-blocks .txt-news {
+    align-items: center;
+}
+
+.center-block .news .news-blocks .txt-news-2 {
+    transform:skewY(-35deg);
+}
+
+.center-block .news .news-blocks .txt-news a {
+    text-decoration: none;
+    color: white;
+}
+
+.center-block .news .news-blocks .txt-news small {
+    color: gray;
+}
+
+.center-block .news .news-blocks .txt-news p small {
+    font-size: 20px;
+    color: white;
+}
+
+.center-block .news .news-blocks .img-news {
+    border-right: 2px dashed white;
+    width: 300px;
+    margin: 30px;
+}
+
+.center-block .news .news-blocks .img-news img {
+    width: 200px;
+    margin: 10px;
+}
+
+.center-block .news .news-blocks .img-news-2 img {
+   animation: Logo-anim 5s ease-in-out infinite;
+}
+
+.center-block .news .news-blocks:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+/* Center-Block */
+/* Video-Content */
+.video-content p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.video-content .video div {
+    position: relative;
+    width: 500px;
+    height: 250px;
+    margin-right: 50px;
+    border: 2px dashed white;
+}
+
+.video-content .video div iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-content .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-content .but-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.video-content .but-video a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 15px;
+    border: 2px dashed white;
+}
+/* Video-Content */
+/* Left-Block */
+.left-block{
+    position: sticky;
+    width: 500px;
+    height: 100vh;
+    font-weight:600;
+    margin: 30px 0 0 50px;
+    color: white;
+}
+
+.new-mach .new-mach-txt {
+    border-left: 5px solid white;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.new-mach div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.new-mach div img {
+    width: 30px;
+}
+
+.mach {
+    border: 2px dashed white;
+    min-height: 100px;
+    min-width: 480px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.new-mach .mach .logo-game {
+    padding: 5px;
+    border-right: 2px dashed white;
+    height: 100px;
+}
+
+.new-mach .team {
+    position: relative;
+}
+
+.new-mach .team div {
+    margin: 0 40px 0 50px;
+}
+
+.new-mach .team div img {
+    margin: 0 10px 0 0;
+    width: 50px;
+}
+
+.new-mach .mach .info-mach {
+    position: absolute;
+    opacity: 0;
+    padding: 5px;
+    margin: 50px;
+    height: 80px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.547);
+    transition: all 0.3s ease-in-out;
+}
+
+.new-mach .mach .info-mach p {
+    margin: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.mach:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color:rgba(137, 43, 226, 0.615);
+}
+
+.mach:hover .info-mach {
+    opacity: 1;
+}
+
+.more-mach {
+    position: relative;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding: 15px;
+    margin-top: 10px;
+    border: 2px dashed white;
+    transition: all 0.2s ease-in-out;
+}
+
+.left-block .more-mach a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.more-mach:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+}
+/* Left-Block */
+/* Footer */
+.footer {
+    position: relative;
+    min-height: 175px;
+    top: 600px;
+    padding: 20px;
+    color: white;
+    border-left: 2px solid blueviolet;
+    border-right: 2px solid blueviolet;
+}
+
+.footer .foot-txt {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.49);
+}
+
+.footer .link {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.footer .link img {
+    width: 50px;
+}
+
+.footer .link a {
+    display: flex;
+    text-decoration: none;
+    margin-left: 200px;
+    color: white;
+    font-weight: bold;
+}
+
+.footer .link a:hover {
+    filter: brightness(150%);
+}
+
+.footer-2 {
+    display: flex;
+}
+
+.footer-2 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: gray;
+    font-weight: bold;
+}
+
+.footer-2 div img {
+    width: 20px;
+    margin: 10px;
+    filter: grayscale(100%);
+}
+
+/* Footer */
+
+/* Aimation */
+@keyframes Logo-anim {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    } 
+}
