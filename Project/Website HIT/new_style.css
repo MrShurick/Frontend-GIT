@@ -94,6 +94,7 @@ body {
     min-height: 100vh;
     color: white;
 }
+
 /* center-block */
 .center-block {
     margin-top: 22px;
@@ -258,6 +259,36 @@ body {
     cursor: pointer;
     background-color: rgba(137, 43, 226, 0.578);
     transform: scale(1.05);
+}
+/* Scroll-number */
+.center-content .scroll-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px 0 20px 0;
+    overflow-x: scroll;
+}
+
+.center-content .scroll-number::-webkit-scrollbar {
+    display: none;
+}
+
+.center-content .scroll-number::-webkit-scrollbar-thumb {
+    display: none;
+}
+.center-content .scroll-number a {
+    padding: 5px 10px 5px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.36);
+}
+
+.center-content .scroll-number a:hover {
+    background-color: rgba(255, 255, 255, 0.492);
 }
 /* Footer */
 .footer {
