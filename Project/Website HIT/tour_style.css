@@ -136,6 +136,16 @@ body {
     border: 1px solid white;
 }
 
+.content-center .content-midl .prize table .team {
+    display: flex;
+    align-items: center;
+}
+
+.content-center .content-midl .prize table, th, .team img {
+    width: 68px;
+    margin-right: 10px;
+}
+
 .prize table thead th {
     background-color: rgb(69, 69, 69);
 }
@@ -235,6 +245,37 @@ body {
 
 .content-center .format ul li {
     font-size: 15px;
+}
+
+/* Scroll-number */
+.content-center .scroll-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px 0 20px 0;
+    overflow-x: scroll;
+}
+
+.content-center .scroll-number::-webkit-scrollbar {
+    display: none;
+}
+
+.content-center .scroll-number::-webkit-scrollbar-thumb {
+    display: none;
+}
+.content-center .scroll-number a {
+    padding: 5px 10px 5px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.36);
+}
+
+.content-center .scroll-number a:hover {
+    background-color: rgba(255, 255, 255, 0.492);
 }
 
 /* Footer */
