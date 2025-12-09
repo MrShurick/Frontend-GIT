@@ -135,7 +135,7 @@ body {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding-left: 5px;
-    margin: 50px 0 0 20px;
+    margin: 25px 0 0 20px;
 }
 
 .center-block .center-content-new .block-news .new {
@@ -147,6 +147,7 @@ body {
     background-repeat: no-repeat;
     width: 700px;
     height: 200px;
+    border-radius: 10px;
     transition: all 0.5s ease-in-out;
 }
 
@@ -178,6 +179,25 @@ body {
     background-blend-mode: darken;
 }
 
+.center-block .center-content-new .block-news .new-6 {
+    background-image: url(Img/2560h1440_youtube_XfYiVBb.jpg), 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    background-blend-mode: darken;
+}
+
+.center-block .center-content-new .block-news .new-7 {
+    background-image: url(Img/holiday-ops-2026_footer-bg_v1_2560x440.jpg), 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    background-blend-mode: darken;
+    background-size: 165%;
+}
+
+.center-block .center-content-new .block-news .new-logo {
+    display: block;
+    align-items: center;
+    width: 75%;
+}
+
 .center-block .center-content-new .block-news .new-1 .new-logo .new-2-img {
     width: 330px;
 }
@@ -190,7 +210,22 @@ body {
     width: 400px;
 }
 
-.center-block .center-content-new .block-news .new-2 .new-but a {
+.center-block .center-content-new .block-news .new-6 .new-logo .new-6-img {
+    width: 125%;
+    height: 200px;
+}
+
+.center-block .center-content-new .block-news .new-7 .new-logo .new-7-img {
+    margin-top: 25px;
+    width: 75%;
+}
+
+.center-block .center-content-new .block-news .new-7 .new-logo-7 {
+    width: 100%;
+}
+
+.center-block .center-content-new .block-news .new-2 .new-but a,
+.center-block .center-content-new .block-news .new-7 .new-but a {
     padding: 5px;
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -213,9 +248,17 @@ body {
     font-size: 10px;
     line-height: 15px;
 }
+.center-block .center-content-new .block-news .new-7 .new-txt-7 {
+    padding-top: 25px;
+    font-size: 25px;
+}
 
 .center-block .center-content-new .block-news .new .new-txt h1 {
     font-size: 15px;
+}
+
+.center-block .center-content-new .block-news .new-7 .new-txt-7 h1{
+    font-size: 25px;
 }
 
 .center-block .center-content-new .block-news .new:hover {

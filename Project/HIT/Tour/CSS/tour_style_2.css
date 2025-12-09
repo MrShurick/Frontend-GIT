@@ -95,12 +95,20 @@ body {
 }
 
 .content-center .content-top {
-    background-image: url(Img/wci-announcement-2025_1920x900.jpg);
+    display: flex;
+    align-items: center;
+    background-image: url(/Project/HIT/Tour/Img/holiday-ops-2026_footer-bg_v1_2560x440.jpg);
     background-position:center;
     background-repeat: no-repeat;
     background-size: 100%;
     min-height: 350px;
+    width: 100%;
     justify-items:left;
+}
+
+.content-center .content-top img {
+    margin-left: 50px;
+    width: 25%;
 }
 
 .content-center .content-top p {
@@ -112,11 +120,11 @@ body {
     line-height: 40px;
     letter-spacing: 3.5px;
     background-color: white(255, 255, 255, 0.5);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(1.5px);
 }
 
 .content-center .content-top p small {
-    color: rgb(87, 87, 87);
+    color: rgb(237, 237, 45);
 }
 
 .content-center .content-midl {
@@ -130,56 +138,107 @@ body {
     letter-spacing: 2px;
 }
 
-.content-center .content-midl .prize table, th, td  {
+.content-center .content-midl .prize .table-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.content-center .content-midl .prize .table-1, th, td  {
     text-align: center;
     padding: 10px;
-    border: 1px solid white;
 }
 
-.content-center .content-midl .prize table .team {
-    display: flex;
+.content-center .content-midl .prize .table-1 .team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    justify-items: center;
+    height: 95px;
 }
 
-.content-center .content-midl .prize table, th, .team img {
-    width: 68px;
-    margin-right: 10px;
+.content-center .content-midl .prize .table-1, th, .team img {
+    width: 25px;
 }
 
-.prize table thead th {
+.prize .table-1 thead th {
     background-color: rgb(69, 69, 69);
 }
 
-.prize table tbody .st1 th {
+.prize .table-1 tbody .st1 th {
     background-color: goldenrod;
 }
 
-.prize table tbody .st2 th {
+.prize .table-1 tbody .st2 th {
     background-color: silver;
 }
 
-.prize table tbody .st3 th {
+.prize .table-1 tbody .st3 th {
     background-color: rgb(187, 101, 61);
 }
 
-.prize table tbody .st4 th {
+.prize .table-1 tbody .st4 th {
     background-color: rgb(113, 68, 51);
 }
 
-.prize table tbody .st1 td  {
+.prize .table-1 tbody .st1 td  {
     border-bottom: 5px solid goldenrod;
 }
 
-.prize table tbody .st2 td {
+.prize .table-1 tbody .st2 td {
     border-bottom: 5px solid silver;
 }
 
-.prize table tbody .st3 td {
+.prize .table-1 tbody .st3 td {
     border-bottom: 5px solid rgb(187, 101, 61);
 }
 
-.prize table tbody .st4 td {
+.prize .table-1 tbody .st4 td {
     border-bottom: 5px solid rgb(113, 68, 51);
+}
+
+.content-center .content-midl .prize .table-block .table-2 tbody td {
+    font-size: 15px;
+    border: 1px solid rgb(68, 68, 68);
+}
+
+.content-center .content-midl .prize .table-2 thead th,
+.content-center .content-midl .prize .table-3 thead th {
+    background-color: rgb(69, 69, 69);
+}
+
+.content-center .content-midl .prize .table-block .table-3 {
+    margin-top: 50px;
+    grid-column: span 2;
+}
+
+.content-center .content-midl .prize .table-block .table-3 tbody .bonds div,
+.content-center .content-midl .prize .table-block .table-3 tbody .gold div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-center .content-midl .prize .table-block .table-3 tbody .bonds img,
+.content-center .content-midl .prize .table-block .table-3 tbody .gold img {
+    width: 25%;
+}
+
+.content-center .content-midl .prize .table-block .table-2 tbody .st1,
+.content-center .content-midl .prize .table-block .table-3 tbody .st1 {
+    background-color: goldenrod;
+}
+
+.content-center .content-midl .prize .table-block .table-2 tbody .st2,
+.content-center .content-midl .prize .table-block .table-3 tbody .st2 {
+    background-color: silver;
+}
+
+.content-center .content-midl .prize .table-block .table-3 tbody .st3 {
+    background-color:rgb(0, 204, 136);
+}
+
+.content-center .content-midl .prize .table-block .table-3 tbody .st5 {
+    background-color:rgb(0, 153, 102);
 }
 
 .partic {
@@ -206,7 +265,7 @@ body {
 .partic .partic-logo .partic-info table {
     position: absolute;
     opacity: 0;
-    bottom: 50px;
+    bottom: 30px;
     background-color: rgba(0, 0, 0, 0.641);
 }
 
@@ -230,6 +289,10 @@ body {
 .partic .partic-logo .partic-info img {
     width: 200px;
 } 
+
+.partic .partic-logo .partic-info .cash {
+    width: 150px;
+}
 
 .content-center .format h1 {
     text-align: center;
