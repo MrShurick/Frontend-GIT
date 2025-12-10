@@ -294,7 +294,8 @@ body {
     width: 150px;
 }
 
-.content-center .format h1 {
+.content-center .format h1,
+.content-center .result h1 {
     text-align: center;
     border-left: 2px solid blueviolet;
     border-right: 2px solid  blueviolet;
@@ -309,6 +310,70 @@ body {
 .content-center .format ul li {
     font-size: 15px;
 }
+
+/* Results */
+.content-center .result .table-3 {
+    padding: 10px;
+}
+
+.content-center .result .table-3 thead th {
+    width: 150px;
+    background-color: rgb(69, 69, 69);
+}
+
+.content-center .result .table-3 tbody tr .round img,
+.content-center .result .table-3 tbody tr .part img {
+    width: 25%;
+}
+
+.content-center .result .table-3 tbody tr .part img {
+    width: 15%;
+}
+
+.content-center .result .table-3 tbody tr .round {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+
+}
+
+.content-center .result .table-3 tbody tr .part {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    font-size: 18px;
+}
+
+.content-center .result .table-3 tbody td {
+    background-color: rgba(69, 69, 69, 0.488);
+    transition: all 0.3s ease-in-out;
+}
+
+.content-center .result .table-3 tbody .g-blue {
+    background-color: #112d30;
+}
+
+.content-center .result .table-3 tbody .green {
+    background-color:#0c4a0f;
+}
+
+.content-center .result .table-3 tbody .d-green {
+    background-color:#253415 ;
+}
+
+.content-center .result .table-3 tbody .red {
+    background-color:#360e0d ;
+}
+
+.content-center .result .table-3 tbody td:hover {
+    transform: scale(1.3);
+    box-shadow: 1px 1px 5px 1px white;
+    cursor: pointer;
+}
+
 
 /* Scroll-number */
 .content-center .scroll-number {
